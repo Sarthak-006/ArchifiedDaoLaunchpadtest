@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DaoLaunchpad - Home</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>DaoLaunchpad</h1>
+      <nav>
+        <ul>
+          <li><a href="#proposals">Proposals</a></li>
+          <li><a href="#submit-proposal">Submit a Proposal</a></li>
+          <li><a href="#my-account">My Account</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="proposals">
+        <h2>Current Proposals</h2>
+        <ul id="proposals-list">
+        </ul>
+      </section>
+      <section id="submit-proposal">
+        <h2>Submit a Proposal</h2>
+        <form>
+          <label for="project-name">Project Name:</label>
+          <input type="text" id="project-name" name="project-name" required>
+          <label for="project-description">Project Description:</label>
+          <textarea id="project-description" name="project-description" required></textarea>
+          <label for="project-timeline">Project Timeline:</label>
+          <input type="date" id="project-timeline" name="project-timeline" required>
+          <label for="project-funding">Funding Required:</label>
+          <input type="number" id="project-funding" name="project-funding" required>
+          <button type="submit">Submit Proposal</button>
+        </form>
+      </section>
+      <section id="my-account">
+        <h2>My Account</h2>
+        <p id="account-balance">Account Balance: </p>
+        <ul>
+          <li><a href="#my-proposals">My Proposals</a></li>
+          <li><a href="#my-votes">My Votes</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>DaoLaunchpad - © 2023</p>
+      <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+      <script src="script.js"></script>
+    </footer>
+  </body>
+</html>
